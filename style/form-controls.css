@@ -1,0 +1,15 @@
+.input-flex > input:user-invalid {
+    border: 5px solid red;
+}
+
+.input-flex > input:user-valid {
+    border: 5px solid rgb(43, 178, 72);
+}
+
+
+.input-flex input:focus {
+    outline: 3px solid white;
+    border: 5px solid blue;
+    box-shadow: 4px 4px 10px darkblue;
+    z-index: 1;
+}

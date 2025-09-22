@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=bespoke-stencil@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/form-controls.css">
+</head>
+<body>
+
+    <div class="outer-flex">
+        <div class="picture"><div><h1>Meditate</h1></div></div>
+        <form action="#" method="post">
+            <div class="heading">
+                <p>It's time to get your meditation game on and improve your overall health, both physically and mentally.</p>
+                <p>Slip away with us today!</p>
+            </div>
+            <div class="input">
+                <h2>Let's do this!</h2>
+                <div class="first-name input-flex">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" class="first-name" pattern="[A-Za-z]{2-20}" placeholder="Jane" required>
+                </div>
+                
+                <div class="last-name input-flex">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" pattern="[A-Za-z]{2-20}" placeholder="Doe" required>
+                </div>
+                
+                <div class="email input-flex">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email@gmail.com" required>
+                </div>
+                
+                <div class="phone input-flex">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" pattern="\d{3}-\d{3}-\d{4}" placeholder="409-555-5555" required>
+                </div>
+                
+                <div class="password input-flex">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="********" required>
+                </div>
+                
+                <div class="password-conf input-flex">
+                    <label for="password-conf">Confirm Password</label>
+                    <input type="password" id="password-conf" placeholder="********" required>
+                </div>
+                
+            </div>
+            <div class="submission">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <span>Log in</span></p>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
